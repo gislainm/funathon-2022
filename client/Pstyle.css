@@ -1,0 +1,138 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*==================== VARIABLES CSS ====================*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  height: 90vh;
+  display: flex;
+  background-color: #FFF;
+}
+
+.container{
+  position: relative;
+  max-width: 330px;
+  width: 100%;
+  top:12%;
+  height:800px;
+  background: #FFF;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 0 20px;
+}
+
+.container .forms{
+  display: flex;
+  align-items: center;
+  height: 800px;
+  width: 200%;
+  transition: height 0.2s ease;
+}
+
+
+.container .form{
+
+  width: 100%;
+  padding: 30px;
+  background-color: #FFF;
+  transition: margin-left 0.18s ease;
+}
+
+header,footer{
+  position:absolute;
+  background-color:#000;
+  width:100%;
+  color:white;
+}
+header{
+  height:10vh;
+}
+header h2{
+  position: center;
+}
+.nav{
+  position:absolute;
+  width:100%;
+}
+.nav a{
+  position:relative;
+  left:45%;
+  top:20px;
+  color:white;
+  text-decoration: none;
+  margin-right:20px;
+}
+
+
+/*==================== NAV ====================*/
+
+
+/* show menu */
+
+
+/* Active link */
+
+
+/* Change background header */
+
+
+/*==================== HOME ====================*/
+
+
+/*==================== BUTTONS ====================*/
+
+
+/*==================== ABOUT ====================*/
+
+
+/*==================== SKILLS ====================*/
+
+
+/*==================== QUALIFICATION ====================*/
+
+
+/*==================== SERVICES ====================*/
+
+
+/* Active Modal */
+
+
+/*==================== PORTFOLIO ====================*/
+
+
+/*==================== PROJECT IN MIND ====================*/
+
+
+/*==================== TESTIMONIAL ====================*/
+
+
+/*==================== CONTACT ME ====================*/
+
+
+/*==================== FOOTER ====================*/
+
+
+/*========== SCROLL UP ==========*/
+
+
+/* Show scroll */
+
+
+/*========== SCROLL BAR ==========*/
+
+
+/*==================== MEDIA QUERIES ====================*/
+/* For small devices */
+
+
+/* For medium devices */
+
+
+/* For large devices */
