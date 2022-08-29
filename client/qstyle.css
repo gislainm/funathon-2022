@@ -1,0 +1,103 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*==================== VARIABLES CSS ====================*/
+		*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+			background-color: #4070f4;
+			text-align: center;
+            justify-content: center;
+		}
+
+		/* Styling the Form (Color, Padding, Shadow) */
+		form {
+			background-color: #fff;
+            border-radius: 10px;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		/* Styling form-control input,
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 10px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		/* Styling form-control Radio
+		button and Checkbox */
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		/* Styling Button */
+		button {
+            color:#fff;
+			background-color: #4070f4;
+			border: none;
+			border-radius: 25px;
+			font-size: 17px;
+			display: block;
+			width: 100%;
+			margin-top: 40px;
+			margin-bottom: 20px;
+            cursor: pointer;
+            letter-spacing: 1px;
+            border-radius: 60px;
+            height:45px;
+            transition: all 0.3s ease;
+		}
+        .button input:hover{
+            background-color: #265df2;
+        }
+
+        .title{
+            color:#fff;
+            position: relative;
+            margin-top: 30px;
+            font-size:25px;
+            font-weight:600;
+            text-align: center;
+        }
+        .discription{
+            color:#fff;
+            position: relative;
+            margin-top: 3px;
+            font-size:15px;
+            font-weight:100;
+            text-align: center;
+        }
+        .logo {
+            display:flex;
+            position:absolute;
+            width:200px;
+            top:0;
+            left:0;
+        }

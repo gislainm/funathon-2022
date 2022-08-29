@@ -1,3 +1,7 @@
+
+function signup(){
+    window.open("questionaire.html",'_self');
+}
 function validate(){
     var email=document.getElementById("email").value;
     var password=document.getElementById("password").value;
@@ -44,3 +48,20 @@ const container = document.querySelector(".container"),
     login.addEventListener("click", ( )=>{
         container.classList.remove("active");
     });
+    const form = document.querySelector("form"),
+    nextBtn = form.querySelector(".nextBtn"),
+    backBtn = form.querySelector(".backBtn"),
+    allInput = form.querySelectorAll(".first input");
+
+
+nextBtn.addEventListener("click", ()=> {
+allInput.forEach(input => {
+    if(input.value != ""){
+        form.classList.add('secActive');
+    }else{
+        form.classList.remove('secActive');
+    }
+})
+})
+
+backBtn.addEventListener("click", () => form.classList.remove('secActive'));

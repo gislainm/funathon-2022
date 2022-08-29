@@ -178,3 +178,10 @@ body{
     margin-top: 30px;
     text-align: center;
 }
+.logo {
+    display:flex;
+    position:absolute;
+    width:150px;
+    top:0;
+    left:0;
+}

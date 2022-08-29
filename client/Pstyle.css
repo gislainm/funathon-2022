@@ -47,7 +47,7 @@ body{
 
 header,footer{
   position:absolute;
-  background-color:#000;
+  background-color:#4070f4;
   width:100%;
   color:white;
 }
@@ -62,12 +62,21 @@ header h2{
   width:100%;
 }
 .nav a{
+  display:inline-block;
   position:relative;
-  left:45%;
+  left:0%;
   top:20px;
   color:white;
   text-decoration: none;
   margin-right:20px;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+  padding:5px 20px;
+}
+.nav a:hover{
+  background:#265df2;
+
 }
 
 
