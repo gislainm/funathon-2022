@@ -14,15 +14,17 @@
 <body>
 	<section>
 		<header class=" text-bg-dark">
-			<div class="d-flex flex-wrap align-items-center justify-content-lg-start">
-				<ul class="nav col-12 col-lg-11 me-lg-11 mb-2 flex-grow-1 mb-md-0">
+			<div class="d-flex justify-content-between">
+				<div class="logoDesign">
+					<img class="logoDesign" src="../images/prePair-logos_transparent.png">
+				</div>
+				<ul class="nav col-10 col-lg-10 me-lg-10 mb-2 mb-md-0 ml-5">
 					<div><a href="#" class="nav-link  text-white page">Home</a></div>
+					<div><a href="#" class="nav-link  text-white page">Find a Mentor</a></div>
 					<div><a href="#" class="nav-link  text-white page">Profile</a></div>
 					<div><a href="#" class="nav-link  text-white page">Messages</a></div>
 				</ul>
-				<div class="text-end">
-					<button type="button" class="btn btn-warning" id="logoutBtn">Logout</button>
-				</div>
+				<button type="button" class="btn btn-warning" id="logoutBtn">Logout</button>
 			</div>
 		</header>
 		<div class="container">
@@ -103,23 +105,11 @@
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
-									<label>Role</label>
-									<div class="form-check">
-										<input class="form-check-input" type="radio" value="Student" name="role"
-											id="Student" checked>
-										<label class="form-check-label" for="Student">
-											Student
-										</label>
-									</div>
-									<div class="form-check">
-										<input class="form-check-input" type="radio" value="Mentor" name="role"
-											id="Mentor">
-										<label class="form-check-label" for="Mentor">
-											Mentor
-										</label>
-									</div>
+									<label>Age</label>
+									<input type="text" class="form-control" value="20">
 								</div>
 							</div>
+
 							<div class="col-md-6">
 								<div class="form-group">
 									<label>Email</label>
