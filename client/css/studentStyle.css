@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+
+body {
+	background: #e1a210ce;
+	font-family: "Roboto", sans-serif;
+}
+
+
+.page {
+	width: 15rem;
+	font-size: 15px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 400;
+	text-align: center;
+}
+
+.page:hover {
+	background-color: #eaab1771;
+}
+
+#logoutBtn {
+	color: white;
+	border-radius: 20px;
+	position: absolute;
+	right: 0px;
+	align-self: center;
+}
+
+
+
+header {
+	background-color: #1b1e41;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	position: sticky;
+}
+
+.logoDesign {
+	width: 60px;
+	top: 0;
+	left: 0;
+}
+.nav{
+	align-self: center;
+}
+
+.container {
+    max-width: 1500px !important;
+}
+.card-mentor-wrpr{
+	width: 100%;
+	display:flex;
+	gap:50px;
+	justify-content: center;
+	align-content: center;
+}
+.card-wrpr{
+	width: 100%;
+}
+.card-mentor{
+	width:300px
+}
+.card-mentor img{
+	width:100%;
+}
