@@ -125,18 +125,22 @@ header {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 .card-img-top{
-padding:10px 14px;
+padding:10px 77px;
+padding-bottom: 0px;
 }
 
 .button{
 	border:none;
 	font-size:16px;
 	color:#FFF;
-	padding:8px 16px;
+	padding:8px 20px;
 	background-color:#eaab17;
 	border-radius: 6px;
-	margin:14px;
+	margin:20px;
 }
 .col{	
 	margin:10px;
+}
+.card-title{
+	
 }
