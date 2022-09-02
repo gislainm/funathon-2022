@@ -44,7 +44,7 @@
 						Gender
 					</label>
 					<select id="gender" required>
-						<option disabled selected>Select gender</option>
+						<option disabled selected value="">Select gender</option>
 						<option value="Male">Male</option>
 						<option value="Female">Female</option>
 						<option value="Other">Others</option>
@@ -69,11 +69,11 @@
 					<input type="text" id="job" placeholder="Enter your current job title" />
 				</div>
 				<div class="form-control" id="levelEd-cont">
-					<label for="name" id="levelEd">
+					<label for="name" id="levelEd2">
 						Your highest level of education
 					</label>
 					<select name="levelEd" id="levelEd" required>
-						<option disabled selected>Select one</option>
+						<option disabled selected value="">Select one</option>
 						<option value="Highschool"> Highschool</option>
 						<option value="Bachelors"> Bachelor's degree</option>
 						<option value="Masters">Masters degree</option>
@@ -85,7 +85,7 @@
 						What year are you in School?
 					</label>
 					<select name="yearInSchool" id="yearInSchool" required>
-						<option disabled selected>Select one</option>
+						<option disabled selected value="">Select one</option>
 						<option value="Freshman"> Freshman</option>
 						<option value="Sophomore"> Sophomore</option>
 						<option value="Junior">Junior</option>
@@ -96,25 +96,25 @@
 					<label id="label-age">
 						What did you get your degree in? (major)
 					</label>
-					<input type="text" id="major" placeholder="Enter your major" />
+					<input type="text" id="vMajor" placeholder="Enter your major" />
 				</div>
 				<div class="form-control" id="Vschool-cont">
 					<label id="school-label">
 						From which school did you get your degree?
 					</label>
-					<input type="text" id="school" placeholder="Enter your school" />
+					<input type="text" id="vSchool" placeholder="Enter your school" />
 				</div>
 				<div class="form-control" id="Smajor-cont" style="display:none">
 					<label id="label-age">
 						What is your major?
 					</label>
-					<input type="text" id="major" placeholder="Enter your major" />
+					<input type="text" id="sMajor" placeholder="Enter your major" />
 				</div>
 				<div class="form-control" id="Sschool-cont" style="display:none">
 					<label id="school-label">
 						Which school are you currently attending?
 					</label>
-					<input type="text" id="school" placeholder="Enter your school" />
+					<input type="text" id="Sschool" placeholder="Enter your school" />
 				</div>
 				<div class="form-control">
 					<label id="adress-label">
@@ -140,7 +140,7 @@
 						What State are you from?
 					</label>
 					<select id="state">
-						<option disabled selected>Select one</option>
+						<option disabled selected value="">Select one</option>
 						<option value="AL">Alabama</option>
 						<option value="AK">Alaska</option>
 						<option value="AZ">Arizona</option>
@@ -195,28 +195,34 @@
 					</select>
 
 				</div>
+				<div class="form-control">
+					<label id="zip-label">
+						Zipcode
+					</label>
+					<input type="text" id="zipcode" placeholder="Enter your zipcode" />
+				</div>
 				<div class="form-control" id="discipline-cont">
 					<label>what best discribes the discipline of your STEM degree
 						<small>(Check all that apply)</small>
 					</label>
 					<!-- Input Type Checkbox -->
 					<label for="inp-1">
-						<input type="checkbox" name="discipline">Agriculture/Natural Resources</input></label>
+						<input type="checkbox" name="discipline" value="Agric">Agriculture/Natural Resources</input></label>
 					<label for="inp-2">
-						<input type="checkbox" name="discipline">Biological and Biomedical Sciences</input></label>
+						<input type="checkbox" name="discipline" value="Bios">Biological and Biomedical Sciences</input></label>
 					<label for="inp-3">
-						<input type="checkbox" name="discipline">Computer Science/Info Sciences/Support
+						<input type="checkbox" name="discipline" value="Comp">Computer Science/Info Sciences/Support
 						Tech</input></label>
 					<label for="inp-4">
-						<input type="checkbox" name="discipline">Engineering</input></label>
+						<input type="checkbox" name="discipline" value="Eng">Engineering</input></label>
 					<label for="inp-5">
-						<input type="checkbox" name="discipline">Health Professions</input></label>
+						<input type="checkbox" name="discipline" value="Healp">Health Professions</input></label>
 					<label for="inp-6">
-						<input type="checkbox" name="discipline">Mathematics and Statistics</input></label>
+						<input type="checkbox" name="discipline" value="Math">Mathematics and Statistics</input></label>
 					<label for="inp-7">
-						<input type="checkbox" name="discipline">Physical Sciences</input></label>
+						<input type="checkbox" name="discipline" value="Phys">Physical Sciences</input></label>
 					<label for="inp-7">
-						<input type="checkbox" name="discipline">Psychology</input></label>
+						<input type="checkbox" name="discipline" value="Psyc">Psychology</input></label>
 				</div>
 
 
@@ -236,6 +242,7 @@
 			</form>
 		</div>
 	</div>
+	<script src="../js/questionnaire.js"></script>
 </body>
 
 </html>

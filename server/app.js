@@ -8,9 +8,11 @@ const userRouter = require('./routes/userRouter');
 const messageRouter = require("./routes/messageRouter");
 const responseInfo = require('./model/responseInfo');
 const { response } = require('express');
+const path = require('path');
 
 const app = express();
 
+app.use(express.static(path.join(__dirname, '..', 'client')))
 app.use(cors());
 app.use(express.json());
 
@@ -26,6 +28,6 @@ app.use((err, req, res, next) => {
 });
 
 mongoose.connect('mongodb://localhost:27017/PrePairDB')
-    .then(()=>{
-        app.listen(8080, ()=>{console.log('welcome to Pre-Pair')})
+    .then(() => {
+        app.listen(8080, () => { console.log('welcome to Pre-Pair') })
     })

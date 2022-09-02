@@ -7,11 +7,12 @@ const { Schema } = mongoose;
 const userSchema = new Schema({
     Firstname: { type: String, required: true },
     Lastname: { type: String, required: true },
-    Email: { type: String, required: true },
+    email: { type: String, required: true, unique: true },
     Password: { type: String, required: true },
     Role: { type: String, required: true },
-    Gender: { type: String, required: true },
+    Gender: String,
     Age: Number,
+    Image: String,
     Company: String,
     Job: String,
     LevelOfEducation: String,
@@ -19,15 +20,19 @@ const userSchema = new Schema({
     University: String,
     Major: String,
     Address: String,
+    Mentors: [{ type: Schema.Types.ObjectId, ref: 'User' }],
+    Mentees: [{ type: Schema.Types.ObjectId, ref: 'User' }],
     Discipline: [String],
+    Bio: String,
     Active: Boolean,
 })
 
 userSchema.pre('save', async function (next) {
     try {
         const salt = await bcrypt.genSalt(10);
-        const hashPassword = await bcrypt.hash(this.password, salt);
-        this.password = hashPassword;
+        const hashPassword = await bcrypt.hash(this.Password, salt);
+        this.Password = hashPassword;
+        this.Active = true;
         next();
     } catch (error) {
         next(error);
