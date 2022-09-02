@@ -54,7 +54,9 @@ async function completeUserInfo() {
             }
         });
         const result = await response.json();
+        sessionStorage.setItem('accessToken', result.data.accessToken);
         console.log(result);
+        window.location = 'http://localhost:8080/prepair/userPage'
 
     } else if (userRole === "Mentor") {
         Company = document.getElementById('company').value;
@@ -90,8 +92,8 @@ async function completeUserInfo() {
             }
         });
         const result = await response.json();
+        sessionStorage.setItem('accessToken', result.data.accessToken);
         console.log(result);
-        console.log(allDiscipline);
-
+        window.location = 'http://localhost:8080/prepair/userPage'
     }
 }

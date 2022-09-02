@@ -5,6 +5,6 @@ window.onload = function () {
     document.getElementById('loginBtn').onclick = changePage;
     document.getElementById('signuBtn').onclick = changePage;
 }
-function changePage() {
-    window.location = 'http://127.0.0.1:5500/client/html/login1.html#'
+async function changePage() {
+    window.location = 'http://localhost:8080/prepair/login'
 }

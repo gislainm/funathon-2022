@@ -17,7 +17,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use('/prepair', userRouter);
-// app.use('/prepair', messageRouter);
+app.use('/prepair', messageRouter);
 
 app.use((req, res, next) => {
     res.status(4040).json(new responseInfo(true, "Page Not Found", null));

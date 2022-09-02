@@ -2,25 +2,26 @@
 /*eslint-disable */
 window.onload = function () {
     document.getElementById('signupBtn').onclick = signupUser;
+    document.getElementById('loginBtn').onclick = login;
 }
 
-function validate() {
-    var email = document.getElementById("email").value;
-    var password = document.getElementById("password").value;
-    if (email == "admin" && password == "user") {
-        alert("login succesfully");
-        window.open("profile.html", '_self')
-        return false;
-    }
-    else {
-        alert("login failed");
-    }
-}
+// function validate() {
+//     var email = document.getElementById("email").value;
+//     var password = document.getElementById("password").value;
+//     if (email == "admin" && password == "user") {
+//         alert("login succesfully");
+//         window.open("profile.html", '_self')
+//         return false;
+//     }
+//     else {
+//         alert("login failed");
+//     }
+// }
 const container = document.querySelector(".container"),
     pwShowHide = document.querySelectorAll(".showHidePw"),
     pwFields = document.querySelectorAll(".password"),
     signUp = document.querySelector(".signup-link"),
-    login = document.querySelector(".login-link");
+    loginPage = document.querySelector(".login-link");
 
 //   js code to show/hide password and change icon
 pwShowHide.forEach(eyeIcon => {
@@ -47,13 +48,40 @@ pwShowHide.forEach(eyeIcon => {
 signUp.addEventListener("click", () => {
     container.classList.add("active");
 });
-login.addEventListener("click", () => {
+loginPage.addEventListener("click", () => {
     container.classList.remove("active");
 });
 
+//Js code for loging in a user
+async function login() {
+    const email = document.getElementById("email").value;
+    const Password = document.getElementById("password").value;
+    if (email && Password) {
+        const response = await fetch('http://localhost:8080/prepair/login', {
+            method: 'Post',
+            body: JSON.stringify({
+                email,
+                Password
+            }),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+        const result = await response.json();
+        if (result.error) {
+            console.log(result);
+        } else {
+            console.log(result);
+            sessionStorage.setItem('accessToken', result.data.accessToken);
+            window.location = 'http://localhost:8080/prepair/userPage';
+        }
+
+
+    }
+}
+
 
 //Js code for signing up and changing the page to questionnaire page
-
 function signupUser() {
     let firstname = document.getElementById('fname').value;
     let lastname = document.getElementById('lname').value;
@@ -96,7 +124,7 @@ async function registerUser(fname, lname, email, password, role) {
     } else {
         sessionStorage.setItem('role', result.data.Role);
         sessionStorage.setItem('email', result.data.email);
-        window.location = '/client/html/questionaire.html';
+        window.location = 'http://localhost:8080/prepair/questionnaire';
     }
 }
 
