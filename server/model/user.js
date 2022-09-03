@@ -33,6 +33,11 @@ userSchema.pre('save', async function (next) {
         const hashPassword = await bcrypt.hash(this.Password, salt);
         this.Password = hashPassword;
         this.Active = true;
+        if (this.Gender === "Male") {
+            this.Image = "user1.png";
+        } else if (this.Gender === "Female") {
+            this.Image = "FemaleUser.png";
+        }
         next();
     } catch (error) {
         next(error);

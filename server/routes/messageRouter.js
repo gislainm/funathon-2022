@@ -5,6 +5,6 @@ const router = express.Router();
 const messageController = require('../controllers/messageController');
 
 router.post('/sendMessage', messageController.sendMessage);
-router.post('/createRoom', messageController.createMessageRoom);
+// router.post('/createRoom', messageController.createMessageRoom);
 
 module.exports = router;
