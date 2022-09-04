@@ -113,6 +113,11 @@ header {
 	top: 0;
 	left: 0;
 }
-.nav{
+
+.nav {
 	align-self: center;
+}
+
+.profile {
+	background-color: #eaab1771;
 }
