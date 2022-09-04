@@ -73,6 +73,11 @@ exports.signup = async (req, res, next) => {
 exports.completeUserInfo = async (req, res, next) => {
     const email = req.body.email;
     const newUserInfo = req.body.moreInfo
+    if (newUserInfo.Gender === "Female") {
+        newUserInfo.Image = "user1.png";
+    } else if (newUserInfo.Gender === "Male") {
+        newUserInfo.Image = "FemaleUser.png";
+    }
     try {
         const updateUser = await User.updateOne({ email }, newUserInfo);
         const updatedUser = await User.findOne({ email });

@@ -5,18 +5,7 @@ window.onload = function () {
     document.getElementById('loginBtn').onclick = login;
 }
 
-// function validate() {
-//     var email = document.getElementById("email").value;
-//     var password = document.getElementById("password").value;
-//     if (email == "admin" && password == "user") {
-//         alert("login succesfully");
-//         window.open("profile.html", '_self')
-//         return false;
-//     }
-//     else {
-//         alert("login failed");
-//     }
-// }
+let User;
 const container = document.querySelector(".container"),
     pwShowHide = document.querySelectorAll(".showHidePw"),
     pwFields = document.querySelectorAll(".password"),
@@ -67,12 +56,12 @@ async function login() {
                 'Content-Type': 'application/json'
             }
         });
-        const result = await response.json();
-        if (result.error) {
-            console.log(result);
+        User = await response.json();
+        if (User.error) {
+            console.log(User);
         } else {
-            console.log(result);
-            sessionStorage.setItem('accessToken', result.data.accessToken);
+            // console.log(User);
+            sessionStorage.setItem('accessToken', User.data.accessToken);
             window.location = 'http://localhost:8080/prepair/userPage';
         }
 
@@ -128,3 +117,5 @@ async function registerUser(fname, lname, email, password, role) {
     }
 }
 
+module.exports = User;
+// export default User;

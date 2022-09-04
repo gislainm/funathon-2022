@@ -17,6 +17,8 @@ window.onload = function () {
     }
 }
 
+let User;
+
 async function completeUserInfo() {
     let userRole = sessionStorage.getItem('role');
     let email = sessionStorage.getItem('email');
@@ -53,9 +55,9 @@ async function completeUserInfo() {
                 'Content-Type': 'application/json'
             }
         });
-        const result = await response.json();
-        sessionStorage.setItem('accessToken', result.data.accessToken);
-        console.log(result);
+        User = await response.json();
+        sessionStorage.setItem('accessToken', User.data.accessToken);
+        // console.log(User);
         window.location = 'http://localhost:8080/prepair/userPage'
 
     } else if (userRole === "Mentor") {
@@ -91,9 +93,13 @@ async function completeUserInfo() {
                 'Content-Type': 'application/json'
             }
         });
-        const result = await response.json();
-        sessionStorage.setItem('accessToken', result.data.accessToken);
-        console.log(result);
+        User = await response.json();
+        sessionStorage.setItem('accessToken', User.data.accessToken);
+        // console.log(User);
         window.location = 'http://localhost:8080/prepair/userPage'
     }
 }
+
+module.exports = User;
+// export const newUser = User;
+
