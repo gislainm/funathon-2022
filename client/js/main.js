@@ -1,4 +1,3 @@
-
 //Card filter
 var buttonUp = () => {
     const input = document.querySelector(".searchbox-input");
