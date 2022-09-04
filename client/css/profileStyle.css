@@ -144,3 +144,19 @@ padding-bottom: 0px;
 .card-title{
 	
 }
+.searchbox-input{
+	position:flex;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+	border-radius: 25px;
+}
+
+.wrap{
+	width: 90%;
+	height:50px;
+  }

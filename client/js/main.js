@@ -1,3 +1,19 @@
+
+//Card filter
+var buttonUp = () => {
+    const input = document.querySelector(".searchbox-input");
+    const cards = document.getElementsByClassName("card h-100");
+    let filter = input.value
+    for (let i = 0; i < cards.length; i++) {
+        let title = cards[i].querySelector(".card-body");
+        if (title.innerText.indexOf(filter) > -1) {
+            cards[i].classList.remove("d-none")
+        } else {
+            cards[i].classList.add("d-none")
+        }
+    }
+}
+//user validation
 function validate(){
     var email=document.getElementById("email").value;
     var password=document.getElementById("password").value;
@@ -44,3 +60,11 @@ const container = document.querySelector(".container"),
     login.addEventListener("click", ( )=>{
         container.classList.remove("active");
     });
+    
+    $( '.friend-drawer--onhover' ).on( 'click',  function() {
+  
+        $( '.chat-bubble' ).hide('slow').show('slow');
+        
+      });
+
+      
