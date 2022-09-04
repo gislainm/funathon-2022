@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
-
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 body {
 	background: #e1a210ce;
 	font-family: "Roboto", sans-serif;
@@ -59,6 +59,7 @@ header {
 }
 .card-wrpr{
 	width: 100%;
+	
 }
 .card-mentor{
 	width:400px;
@@ -93,11 +94,11 @@ header {
 }
 .space{
 	height: 250px;
-	background-color: #e1a210ce ;
+	
 }
 .tips-list{
 	padding-top: 100px;
-	background-color:  #e1a210ce;
+	
 }
 
 
@@ -115,7 +116,7 @@ header {
 	font-size: 3rem;
 }
 .meeting-mentor{
-	background-color: #e1a210ce;
+	
 }
 .img-st{
 	width: 100%;
@@ -127,7 +128,7 @@ header {
     font-style: normal;
     font-size: 51px !important;
     line-height: 7;
-	margin:0 28px;
+	margin:-144px 28px;
     letter-spacing: normal;
     text-transform: none;
     display: inline-block;
@@ -136,22 +137,25 @@ header {
     direction: ltr;
     font-feature-settings: "liga";
     -webkit-font-smoothing: antialiased;
+	top: 13px;
+    position: relative;
 }
 
 .footer{
 	height: 200px;
-	background-color: #e1a210ce;
+	
 }
 
 .tips-list li{
 	background-color: rgba(242, 247, 250, 0.147);
 	margin: 41px;
-	padding: 20px;
-	border-radius:30px 0px 20px 30px;
+	padding: 24px;
+	border-radius:30px 2px 2px 30px;
 	margin-left:0; padding-left:0; 
 	counter-increment:item;
 	list-style:none inside;
-	margin-bottom:10px
+	margin-bottom:10px;
+	box-shadow: 2px 2px 3px -2px #18161c;
 }
 .tips-list ol{
 	margin-left:0; padding-left:0; counter-reset:item
@@ -164,10 +168,48 @@ content:counter(item) ;
 padding:30px 36px;
 margin-right:0.5em;
 background:rgba(140, 120, 5, 0.874);
--webkit-border-radius: 10px;
--moz-border-radius: 10px;
-border-radius: 10%; 
+-webkit-border-radius:10% 10% 0% 30%;
+-moz-border-radius: 10% 10% 0% 30%;
+border-radius:10% 10% 0% 41%; 
 }
 .tips-list h1{
 	font-family: 'EB Garamond', serif !important;
+}
+.mentor-trng{
+	height: 350px;
+	flex-direction: row;
+	gap: 15px;
+	justify-content: center;
+}
+.mentor-trng img{
+	width:fit-content;
+	height:fit-content;
+	border: 1px solid #ffffff;
+}
+.m-prog {
+	
+	
+	font-size: 3rem;
+	font-family: 'Poiret One', cursive !important;
+	font-weight: lighter;
+	margin: -40px 0px;
+}
+.m-trng{
+	
+	text-decoration: none;
+	font-size: 4rem;
+	font-family: 'Poiret One', cursive !important;
+	font-weight: lighter;
+}
+.m-tp{
+	align-self: center;
+	font-family:'EB Garamond', serif !important; 
+font-weight: bolder;
+}
+
+.link-mt {
+	
+	align-self: center;
+	text-decoration: none !important;
+	color:  #1D1B40;
 }
