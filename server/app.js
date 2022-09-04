@@ -7,7 +7,6 @@ const mongoose = require('mongoose');
 const userRouter = require('./routes/userRouter');
 const messageRouter = require("./routes/messageRouter");
 const responseInfo = require('./model/responseInfo');
-const { response } = require('express');
 const path = require('path');
 
 const app = express();
