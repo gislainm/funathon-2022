@@ -93,7 +93,7 @@ header {
 	font-family: 'EB Garamond', serif;
 }
 .space{
-	height: 250px;
+	height: 95px;
 	
 }
 .tips-list{
@@ -176,10 +176,10 @@ border-radius:10% 10% 0% 41%;
 	font-family: 'EB Garamond', serif !important;
 }
 .mentor-trng{
-	height: 350px;
+	/* height: 350px; */
 	flex-direction: row;
 	gap: 15px;
-	justify-content: center;
+	/* justify-content: center; */
 }
 .mentor-trng img{
 	width:fit-content;
@@ -191,20 +191,21 @@ border-radius:10% 10% 0% 41%;
 	
 	font-size: 3rem;
 	font-family: 'Poiret One', cursive !important;
-	font-weight: lighter;
-	margin: -40px 0px;
+	font-weight: bolder;
+	margin: 2px 0px;
 }
 .m-trng{
 	
 	text-decoration: none;
 	font-size: 4rem;
 	font-family: 'Poiret One', cursive !important;
-	font-weight: lighter;
+	font-weight: 500;
 }
 .m-tp{
 	align-self: center;
 	font-family:'EB Garamond', serif !important; 
 font-weight: bolder;
+margin-right: 20px;
 }
 
 .link-mt {
@@ -212,4 +213,9 @@ font-weight: bolder;
 	align-self: center;
 	text-decoration: none !important;
 	color:  #1D1B40;
+}
+.text-tr{
+	color: #18161c;
+	font-size: 1.4rem;
+	font-weight: 500;
 }
