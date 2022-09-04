@@ -1,7 +1,7 @@
 "use strict";
 /*eslint-disable */
 window.onload = function () {
-    authenticate();
+    // authenticate();
     document.getElementById('logoutBtn').onclick = logout;
 }
 
