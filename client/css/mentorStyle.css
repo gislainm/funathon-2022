@@ -16,6 +16,10 @@ body {
 	text-align: center;
 }
 
+.home {
+	background-color: #eaab1771;
+}
+
 .page:hover {
 	background-color: #eaab1771;
 }
@@ -42,27 +46,31 @@ header {
 	top: 0;
 	left: 0;
 }
-.nav{
+
+.nav {
 	align-self: center;
 }
 
 .container {
-    max-width: 1500px !important;
+	max-width: 1500px !important;
 }
-.card-mentor-wrpr{
+
+.card-mentor-wrpr {
 	width: 100%;
-	display:flex;
-	gap:50px;
+	display: flex;
+	gap: 50px;
 	justify-content: center;
 	align-content: center;
 	height: 200px;
 }
-.card-wrpr{
+
+.card-wrpr {
 	width: 100%;
 	
 }
-.card-mentor{
-	width:400px;
+
+.card-mentor {
+	width: 400px;
 	border: 0px solid #1b1e41;
 	border-radius: 20px;
 	box-shadow: 0px 0px 5px rgb(0 0 0 / 50%);
@@ -70,23 +78,27 @@ header {
 	overflow-y: visible;
 	background-color: white;
 }
-.card-mentor p{
+
+.card-mentor p {
 	padding: 18px;
-    font-size: 1.4rem;
-    line-height: 26px;
-    text-align: center;
+	font-size: 1.4rem;
+	line-height: 26px;
+	text-align: center;
 	font-family: 'EB Garamond', serif;
 }
-.card-mentor img{
-	width:100%;
+
+.card-mentor img {
+	width: 100%;
 	border-radius: 20px 20px 0 0;
 
 }
-.send-message img{
+
+.send-message img {
 	width: 100%;
-	
+
 }
-.title{
+
+.title {
 	font-size: 2.3rem;
 	margin-bottom: 30px;
 	color: #1D1B40;
@@ -96,21 +108,23 @@ header {
 	height: 95px;
 	
 }
-.tips-list{
+
+.tips-list {
 	padding-top: 100px;
 	
 }
 
 
-.text{
+.text {
 	display: flex;
 	align-items: center;
 	font-size: 2rem;
 	font-family: 'EB Garamond', serif !important;
-	
-	
+
+
 }
-.text a{
+
+.text a {
 	text-decoration: none;
 	color: #1D1B40;
 	font-size: 3rem;
@@ -118,7 +132,8 @@ header {
 .meeting-mentor{
 	
 }
-.img-st{
+
+.img-st {
 	width: 100%;
 }
 
@@ -146,7 +161,7 @@ header {
 	
 }
 
-.tips-list li{
+.tips-list li {
 	background-color: rgba(242, 247, 250, 0.147);
 	margin: 41px;
 	padding: 24px;
@@ -157,11 +172,14 @@ header {
 	margin-bottom:10px;
 	box-shadow: 2px 2px 3px -2px #18161c;
 }
-.tips-list ol{
-	margin-left:0; padding-left:0; counter-reset:item
-	
+
+.tips-list ol {
+	margin-left: 0;
+	padding-left: 0;
+	counter-reset: item
 }
-.tips-list ol > li:before{
+
+.tips-list ol>li:before {
 	font-weight: bolder;
 	font-size: 1.5rem;
 content:counter(item) ;
