@@ -148,3 +148,8 @@ header {
     font-feature-settings: "liga";
     -webkit-font-smoothing: antialiased;
 }
+
+.footer{
+	height: 200px;
+	background-color: #e1a210ce;
+}
