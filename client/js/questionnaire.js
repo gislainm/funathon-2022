@@ -100,6 +100,3 @@ async function completeUserInfo() {
     }
 }
 
-module.exports = User;
-// export const newUser = User;
-

@@ -51,12 +51,23 @@ exports.login = async (req, res, next) => {
     }
 }
 
-function verifyAuthentication(accessToken) {
+exports.authenticate = (req, res, next) => {
+    const [, token] = req.headers.authorization.split(" ");
     try {
-        let permission = jwt.verify(accessToken, SECRET);
-        return new responseInfo(false, null, permission);
+        let permission = jwt.verify(token, SECRET);
+        res.status(200).json(new responseInfo(false, null, permission));
+    } catch (err) {
+        res.status(400).json(new responseInfo(true, "Invalid JWT", null));
+    }
+}
+
+exports.fetchProfile = async (req, res, next) => {
+    const email = req.params.email;
+    try {
+        const userInfo = await User.findOne({ email });
+        res.status(200).json(new responseInfo(false, null, userInfo));
     } catch (error) {
-        return new responseInfo(true, "Invalid JWT permission", null)
+        res.status(400).json(new responseInfo(true, "profile fetch failed", null));
     }
 }
 
@@ -73,9 +84,9 @@ exports.signup = async (req, res, next) => {
 exports.completeUserInfo = async (req, res, next) => {
     const email = req.body.email;
     const newUserInfo = req.body.moreInfo
-    if (newUserInfo.Gender === "Female") {
+    if (newUserInfo.Gender === "Male") {
         newUserInfo.Image = "user1.png";
-    } else if (newUserInfo.Gender === "Male") {
+    } else if (newUserInfo.Gender === "Female") {
         newUserInfo.Image = "FemaleUser.png";
     }
     try {

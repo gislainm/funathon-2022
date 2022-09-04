@@ -116,6 +116,3 @@ async function registerUser(fname, lname, email, password, role) {
         window.location = 'http://localhost:8080/prepair/questionnaire';
     }
 }
-
-module.exports = User;
-// export default User;
