@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #14162E;
+    font-family: 'Gotham SSm A', 'Gotham SSm B', Arial, sans-serif;
+}
+
+.logoDesign {
+    width: 20%;
+    top: 0;
+    left: 0;
+}
+
+.visionCont {
+    color: white;
+    height: 100%;
+}
+
+.missionTitle {
+    text-align: center;
+    font-weight: 600;
+}
+
+.vision {
+    margin-bottom: 3%;
+    height: 50%;
+    background: #e1a210ce;
+    font-weight: 400;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.mission {
+    height: 50%;
+    font-weight: 400;
+    background-color: aliceblue;
+    color: black;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+
+}
+
+.button {
+    margin-left: 5%;
+    margin-top: 2%;
+    padding: 4px;
+    font-size: 18px;
+    border-radius: 3px;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    padding: 5px 25px;
+    border: none;
+}
+
+#signuBtn {
+    background-color: #a21e21;
+}
+
+#loginBtn {
+    background-color: #eaab17;
+}
+
+#signuBtn:hover {
+    background-color: #450606;
+}
+
+#loginBtn:hover {
+    background-color: #bb8609ce;
+}
+
+.caption>h5 {
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+.caption>p {
+    font-size: 600;
+    font-size: larger;
+}
