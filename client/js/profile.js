@@ -2,11 +2,27 @@
 /*eslint-disable */
 let role = sessionStorage.getItem('role');
 window.onload = function () {
+    authenticate();
     fetchProfile();
     document.getElementById('logoutBtn').onclick = logout;
     document.getElementById('homePage').onclick = returnHome;
     if (role === "Mentor") {
         document.getElementById('mentorPage').style.display = 'none';
+    }
+}
+
+async function authenticate() {
+    const response = await fetch(`http://localhost:8080/prepair/authenticate`, {
+        method: "GET",
+        headers: {
+            Authorization: `Bearer ${sessionStorage.getItem('accessToken')}`,
+        }
+    });
+    const result = await response.json()
+    if (result.error) {
+        window.location = 'http://localhost:8080/prepair/login'
+    } else {
+        sessionStorage.setItem('permission', JSON.stringify(result.data));
     }
 }
 

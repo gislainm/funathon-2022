@@ -19,10 +19,12 @@
 					<img class="logoDesign" src="../images/prePair-logos_transparent.png">
 				</div>
 				<ul class="nav col-10 col-lg-10 me-lg-10 mb-2 mb-md-0 ml-5">
-					<div><a href="#" class="nav-link  text-white page">Home</a></div>
-					<div><a href="#" class="nav-link  text-white page">Find a Mentor</a></div>
-					<div><a href="#" class="nav-link  text-white page">Profile</a></div>
-					<div><a href="#" class="nav-link  text-white page">Messages</a></div>
+					<div><a href="#" class="nav-link  text-white page" id="homePage">Home</a></div>
+					<div><a href="#" class="nav-link  text-white page findMentor">Find a Mentor</a></div>
+					<div><a href="http://localhost:8080/prepair/userPage" class="nav-link  text-white page">Profile</a>
+					</div>
+					<div><a href="http://localhost:8080/prepair/message" class="nav-link  text-white page">Messages</a>
+					</div>
 				</ul>
 				<button type="button" class="btn btn-warning" id="logoutBtn">Logout</button>
 			</div>
@@ -45,12 +47,13 @@
 					<option value="Phys">Physical Sciences</option>
 					<option value="Psyc">Psychology</option>
 				</select>
-				<label for="searchbox-input" style="font-size:18px; font-weight:500">
-					Search by Keyword:
-				</label>
-					<input type="search" placeholder="Enter Keyword" name="search" class="searchbox-input" onkeyup="buttonUp();" required>	
+				<button type="button" class="btn btn-warning" id="searchBtn">Search</button>
 			</div>
-			<div class="row row-cols-1 row-cols-md-3 g-2">
+			<div id="noMentors">
+				<h5>No Mentor found in this discipline, try a different related field</h5>
+			</div>
+			<div class="row row-cols-1 row-cols-md-3 g-2" id="fetchedMentors"></div>
+			<!-- <div class="row row-cols-1 row-cols-md-3 g-2">
 				<div class="col">
 					<div class="card h-100">
 						<img src="../images/FemaleUser.png" class="card-img-top" alt="">
@@ -85,8 +88,8 @@
 						<button class="button">Contact</button>
 					</div>
 				</div>
-			</div>
-			<div class="row row-cols-1 row-cols-md-3 g-2">
+			</div> -->
+			<!-- <div class="row row-cols-1 row-cols-md-3 g-2">
 				<div class="col">
 					<div class="card h-100">
 						<img src="../images/FemaleUser.png" class="card-img-top" alt="">
@@ -121,8 +124,8 @@
 						<button class="button">Contact</button>
 					</div>
 				</div>
-			</div>
-			<div class="row row-cols-1 row-cols-md-3 g-2">
+			</div> -->
+			<!-- <div class="row row-cols-1 row-cols-md-3 g-2">
 				<div class="col">
 					<div class="card h-100">
 						<img src="../images/FemaleUser.png" class="card-img-top" alt="">
@@ -157,7 +160,7 @@
 						<button class="button">Contact</button>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</section>
 
@@ -165,7 +168,7 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script src="../js/main.js"></script>
+	<script src="../js/findMentor.js"></script>
 </body>
 
 </html>

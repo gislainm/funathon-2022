@@ -58,7 +58,7 @@ async function completeUserInfo() {
         User = await response.json();
         sessionStorage.setItem('accessToken', User.data.accessToken);
         // console.log(User);
-        window.location = 'http://localhost:8080/prepair/userPage'
+        window.location = 'http://localhost:8080/prepair/student'
 
     } else if (userRole === "Mentor") {
         Company = document.getElementById('company').value;
@@ -96,7 +96,7 @@ async function completeUserInfo() {
         User = await response.json();
         sessionStorage.setItem('accessToken', User.data.accessToken);
         // console.log(User);
-        window.location = 'http://localhost:8080/prepair/userPage'
+        window.location = 'http://localhost:8080/prepair/mentor'
     }
 }
 

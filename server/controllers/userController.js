@@ -34,6 +34,10 @@ exports.userPage = async (req, res, next) => {
     console.log('user page');
     res.sendFile(path.join(__dirname, '..', '..', 'client', 'html', 'profile.html'));
 }
+exports.findMentor = async (req, res, next) => {
+    console.log("find mentor page");
+    res.sendFile(path.join(__dirname, '..', '..', 'client', 'html', 'findMentor.html'));
+}
 
 exports.login = async (req, res, next) => {
     const email = req.body.email;
@@ -107,7 +111,17 @@ exports.completeUserInfo = async (req, res, next) => {
         }, SECRET);
         res.status(200).json(new responseInfo(false, null, { accessToken, updatedUser }));
     } catch (error) {
-        res.status(400).json(new responseInfo(true, "completing user's information failed"))
+        res.status(400).json(new responseInfo(true, "completing user's information failed", null))
+    }
+}
+
+exports.getMentors = async (req, res, next) => {
+    const discipline = req.params.discipline;
+    try {
+        const mentors = await User.find({ Role: 'Mentor', Discipline: discipline });
+        res.status(200).json(new responseInfo(false, null, mentors));
+    } catch (error) {
+        res.status(400).json(new responseInfo(true, "searching mentors failed", null));
     }
 }
 

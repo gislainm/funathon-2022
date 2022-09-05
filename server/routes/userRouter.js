@@ -12,6 +12,8 @@ router.get('/authenticate', userController.authenticate);
 router.get('/user/:email', userController.fetchProfile);
 router.get('/questionnaire', userController.questionnaire);
 router.get('/userPage', userController.userPage);
+router.get('/findMentor', userController.findMentor);
+router.get('/getMentors/:discipline', userController.getMentors);
 router.post('/login', userController.login);
 router.post('/signup', userController.signup);
 router.post('/complete', userController.completeUserInfo)
