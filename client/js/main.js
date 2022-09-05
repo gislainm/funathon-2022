@@ -60,9 +60,13 @@ async function login() {
         if (User.error) {
             console.log(User);
         } else {
-            // console.log(User);
             sessionStorage.setItem('accessToken', User.data.accessToken);
-            window.location = 'http://localhost:8080/prepair/userPage';
+            sessionStorage.setItem('role', User.data.user.Role);
+            if (User.data.user.Role === "Student") {
+                window.location = 'http://localhost:8080/prepair/student';
+            } else if (User.data.user.Role === "Mentor") {
+                window.location = 'http://localhost:8080/prepair/mentor';
+            }
         }
 
 

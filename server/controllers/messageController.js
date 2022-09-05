@@ -6,6 +6,7 @@ const Message = require('../model/messages');
 const MessageRoom = require('../model/messageRoom');
 const responseInfo = require('../model/responseInfo');
 const { ObjectId } = require('mongodb');
+const path = require('path');
 
 const createMessageRoom = async (receiver, sender, messageId) => {
     const newMessageRoom = new MessageRoom({
@@ -42,6 +43,11 @@ exports.sendMessage = async (req, res, next) => {
     } catch (error) {
         res.status(500).json(new responseInfo(true, "Creating a new message failed", null));
     }
+}
+
+exports.message = async (req, res, next) => {
+    console.log('message');
+    res.sendFile(path.join(__dirname, '..', '..', 'client', 'html', 'message.html'));
 }
 
 // exports.getAllMessages = async (req, res, next) => {

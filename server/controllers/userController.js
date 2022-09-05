@@ -13,6 +13,14 @@ exports.homepage = async (req, res, next) => {
     console.log('homepage');
     res.sendFile(path.join(__dirname, '..', '..', 'client', 'html', 'home.html'));
 }
+exports.studentPage = async (req, res, next) => {
+    console.log('student page');
+    res.sendFile(path.join(__dirname, '..', '..', 'client', 'html', 'student-page.html'));
+}
+exports.mentorPage = async (req, res, next) => {
+    console.log('mentor page');
+    res.sendFile(path.join(__dirname, '..', '..', 'client', 'html', 'mentor-page.html'));
+}
 
 exports.loginPage = async (req, res, next) => {
     console.log('login page');

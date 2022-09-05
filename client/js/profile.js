@@ -1,9 +1,13 @@
 "use strict";
 /*eslint-disable */
+let role = sessionStorage.getItem('role');
 window.onload = function () {
-    authenticate();
     fetchProfile();
     document.getElementById('logoutBtn').onclick = logout;
+    document.getElementById('homePage').onclick = returnHome;
+    if (role === "Mentor") {
+        document.getElementById('mentorPage').style.display = 'none';
+    }
 }
 
 function logout() {
@@ -13,22 +17,6 @@ function logout() {
     sessionStorage.removeItem('role');
     window.location = 'http://localhost:8080/prepair/login'
 }
-
-async function authenticate() {
-    const response = await fetch(`http://localhost:8080/prepair/authenticate`, {
-        method: "GET",
-        headers: {
-            Authorization: `Bearer ${sessionStorage.getItem('accessToken')}`,
-        }
-    });
-    const result = await response.json()
-    if (result.error) {
-        window.location = 'http://localhost:8080/prepair/login'
-    } else {
-        sessionStorage.setItem('permission', JSON.stringify(result.data));
-    }
-}
-
 async function fetchProfile() {
     const userEmail = JSON.parse(sessionStorage.getItem('permission')).email;
     const response = await fetch(`http://localhost:8080/prepair/user/${userEmail}`);
@@ -78,4 +66,11 @@ async function fetchProfile() {
         }
     }
 
+}
+function returnHome() {
+    if (role === 'Student') {
+        window.location = 'http://localhost:8080/prepair/student';
+    } else if (role === 'Mentor') {
+        window.location = 'http://localhost:8080/prepair/mentor';
+    }
 }

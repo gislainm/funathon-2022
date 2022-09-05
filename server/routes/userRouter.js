@@ -6,6 +6,8 @@ const router = express.Router();
 
 router.get('/', userController.homepage);
 router.get('/login', userController.loginPage);
+router.get('/student', userController.studentPage);
+router.get('/mentor', userController.mentorPage);
 router.get('/authenticate', userController.authenticate);
 router.get('/user/:email', userController.fetchProfile);
 router.get('/questionnaire', userController.questionnaire);
