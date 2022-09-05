@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Account Settings UI Design</title>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<link rel="stylesheet" type="text/css"
+		href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/findMentor.css">
+</head>
+
+<body>
+	<section>
+		<header class=" text-bg-dark">
+			<div class="d-flex justify-content-between">
+				<div class="logoDesign">
+					<img class="logoDesign" src="../images/prePair-logos_transparent.png">
+				</div>
+				<ul class="nav col-10 col-lg-10 me-lg-10 mb-2 mb-md-0 ml-5">
+					<div><a href="#" class="nav-link  text-white page">Home</a></div>
+					<div><a href="#" class="nav-link  text-white page">Find a Mentor</a></div>
+					<div><a href="#" class="nav-link  text-white page">Profile</a></div>
+					<div><a href="#" class="nav-link  text-white page">Messages</a></div>
+				</ul>
+				<button type="button" class="btn btn-warning" id="logoutBtn">Logout</button>
+			</div>
+		</header>
+		<div class="container">
+			<div class="text-center text-white">
+				<h1 class="m-3 c-nav">Mentors</h1>
+				<label for="discipline" style="font-size:18px; font-weight:500">
+					Select a discipline:
+				</label>
+				<select name="discipline" id="discipline" required>
+					<option disabled selected value="">Select one</option>
+					<option value="Agric"> Agriculture/Natural Resources</option>
+					<option value="Bios"> Biological and Biomedical Sciences</option>
+					<option value="Comp">Computer Science/Info Sciences/Support
+						Tech</option>
+					<option value="Eng">Engineering</option>
+					<option value="Healp">Health Professions</option>
+					<option value="Math">Mathematics and Statistics</option>
+					<option value="Phys">Physical Sciences</option>
+					<option value="Psyc">Psychology</option>
+				</select>
+				<label for="searchbox-input" style="font-size:18px; font-weight:500">
+					Search by Keyword:
+				</label>
+					<input type="search" placeholder="Enter Keyword" name="search" class="searchbox-input" onkeyup="buttonUp();" required>	
+			</div>
+			<div class="row row-cols-1 row-cols-md-3 g-2">
+				<div class="col">
+					<div class="card h-100">
+						<img src="../images/FemaleUser.png" class="card-img-top" alt="">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+								additional content. This content is a little bit longer.</p>
+						</div>
+						<button class="button">Contact</button>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card h-100">
+						<img src="../images/user1.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+								additional content. This content is a little bit longer.</p>
+						</div>
+						<button class="button">Contact</button>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card  h-100">
+						<img src="../images/FemaleUser.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This card has supporting text below as a natural lead-in to additional
+								content.</p>
+						</div>
+						<button class="button">Contact</button>
+					</div>
+				</div>
+			</div>
+			<div class="row row-cols-1 row-cols-md-3 g-2">
+				<div class="col">
+					<div class="card h-100">
+						<img src="../images/FemaleUser.png" class="card-img-top" alt="">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+								additional content. This content is a little bit longer.</p>
+						</div>
+						<button class="button">Contact</button>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card h-100">
+						<img src="../images/user1.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+								additional content. This content is a little bit longer.</p>
+						</div>
+						<button class="button">Contact</button>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card  h-100">
+						<img src="../images/FemaleUser.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This card has supporting text below as a natural lead-in to additional
+								content.</p>
+						</div>
+						<button class="button">Contact</button>
+					</div>
+				</div>
+			</div>
+			<div class="row row-cols-1 row-cols-md-3 g-2">
+				<div class="col">
+					<div class="card h-100">
+						<img src="../images/FemaleUser.png" class="card-img-top" alt="">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+								additional content. This content is a little bit longer.</p>
+						</div>
+						<button class="button">Contact</button>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card h-100">
+						<img src="../images/user1.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+								additional content. This content is a little bit longer.</p>
+						</div>
+						<button class="button">Contact</button>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card  h-100">
+						<img src="../images/FemaleUser.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This card has supporting text below as a natural lead-in to additional
+								content.</p>
+						</div>
+						<button class="button">Contact</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="../js/main.js"></script>
+</body>
+
+</html>
