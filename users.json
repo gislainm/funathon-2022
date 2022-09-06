@@ -1,0 +1,223 @@
+[{
+  "_id": {
+    "$oid": "63140d598e13c733a544822e"
+  },
+  "Firstname": "Chadia",
+  "Lastname": "Kayitesi",
+  "email": "kchadia@miu.edu",
+  "Password": "$2b$10$oEtE3ALUZM0rg2T0gLll9.dyHLUS7gHYsQ.f7HzDWegjPYyET3wb.",
+  "Role": "Student",
+  "Mentors": [],
+  "Mentees": [],
+  "Discipline": [],
+  "Active": true,
+  "__v": 0,
+  "Address": "606 W Jefferson Ave , Fairfield, IA 52557",
+  "Age": 27,
+  "Bio": "I really need a mentor",
+  "Gender": "Female",
+  "Image": "FemaleUser.png",
+  "Major": "Computer Science",
+  "University": "Maharishi International University",
+  "YearInSchool": "Senior"
+},{
+  "_id": {
+    "$oid": "6315274e31c391854e439743"
+  },
+  "Firstname": "Patrick",
+  "Lastname": "Bihizi",
+  "email": "bpatrict@miu.edu",
+  "Password": "$2b$10$FbOxr9U2qrwrKIhy4foyFO7vb9Fo3oTLcSGIOGmED0oUcO.CZHmSG",
+  "Role": "Mentor",
+  "Mentors": [],
+  "Mentees": [],
+  "Discipline": [
+    "Comp"
+  ],
+  "Active": true,
+  "__v": 0,
+  "Address": "3716 Frew Rd B, Charlotte, NC 28206",
+  "Age": 30,
+  "Bio": "Trying to impact the next generation",
+  "Company": "Amazon",
+  "Gender": "Male",
+  "Image": "user1.png",
+  "Job": "Software Engineer",
+  "LevelOfEducation": "Masters",
+  "Major": "Computer Science",
+  "University": "MIU"
+},{
+  "_id": {
+    "$oid": "631589690e2d78bcc4da12da"
+  },
+  "Firstname": "Megan",
+  "Lastname": "Leib",
+  "email": "mleib@miu.edu",
+  "Password": "$2b$10$g4Y7SaNWHdXd3flmylOTAuiXEveYG03m71aWJvC2khwNqU97dJROS",
+  "Role": "Mentor",
+  "Mentors": [],
+  "Mentees": [],
+  "Discipline": [
+    "Comp"
+  ],
+  "Active": true,
+  "__v": 0,
+  "Address": "1000 N 4th ST MAILBOX 191 , Fairfield, IA 68508",
+  "Age": 35,
+  "Bio": "I have been fortunate enough to have people invest in my education and I would like to pay it forward",
+  "Company": "Apple",
+  "Gender": "Female",
+  "Image": "FemaleUser.png",
+  "Job": "Software Engineer",
+  "LevelOfEducation": "PhD",
+  "Major": "Computer Science",
+  "University": "MIT"
+},{
+  "_id": {
+    "$oid": "63158a7f0e2d78bcc4da12df"
+  },
+  "Firstname": "Dave",
+  "Lastname": "Corlew",
+  "email": "cdave@miu.edu",
+  "Password": "$2b$10$xPdAE73pYccMloM.WIMA..JOwTFtoYOpejAZnKALu5EaqJ6P1IHu6",
+  "Role": "Mentor",
+  "Mentors": [],
+  "Mentees": [],
+  "Discipline": [
+    "Comp"
+  ],
+  "Active": true,
+  "__v": 0,
+  "Address": "600 N 15TH ST SELLECK 4204, LINCOLN, NE 68508-1296",
+  "Age": 37,
+  "Bio": "Over the last 5 years of my career I have learned so much and I would like to impart that knowledge and experience to other younger and motivated computer science students",
+  "Company": "Meta",
+  "Gender": "Male",
+  "Image": "user1.png",
+  "Job": "Software Engineer II",
+  "LevelOfEducation": "Masters",
+  "Major": "Computer Science",
+  "University": "UNL"
+},{
+  "_id": {
+    "$oid": "63158b350e2d78bcc4da12e4"
+  },
+  "Firstname": "Jerome",
+  "Lastname": "Seiber",
+  "email": "sjerome@miu.edu",
+  "Password": "$2b$10$s9pQOjZLvpHFs98y9DT18./9Vjxb1dYVX/ixcnqPhbaR9l58KnAiW",
+  "Role": "Mentor",
+  "Mentors": [],
+  "Mentees": [],
+  "Discipline": [
+    "Comp"
+  ],
+  "Active": true,
+  "__v": 0,
+  "Address": "159 SCENIC DR Apt D, MOORESVILLE, NC 28115",
+  "Age": 40,
+  "Bio": "I have a passion in teaching young people cool technology and helping them grow in their careers.",
+  "Company": "Google",
+  "Gender": "Male",
+  "Image": "user1.png",
+  "Job": "Artificial Intelligence researcher",
+  "LevelOfEducation": "PhD",
+  "Major": "Computer Science",
+  "University": "Iowa State University"
+},{
+  "_id": {
+    "$oid": "631591c10e2d78bcc4da130d"
+  },
+  "Firstname": "Thomas",
+  "Lastname": "Dbtn",
+  "email": "dthomas",
+  "Password": "$2b$10$/jYsgf6IdIfxL0oAzn/O8.42sk9zRYFYc.1HNTgC9RW2sa7sc/LI2",
+  "Role": "Mentor",
+  "Mentors": [],
+  "Mentees": [],
+  "Discipline": [
+    "Bios"
+  ],
+  "Active": true,
+  "__v": 0,
+  "Address": "3716 Frew Rd Apt B, Charlotte, NC 28206",
+  "Age": 28,
+  "Bio": "The knowledge especially in sciences is more valuable when shared.",
+  "Company": "Pfizer",
+  "Gender": "Male",
+  "Image": "user1.png",
+  "Job": "Biotechnology researcher",
+  "LevelOfEducation": "PhD",
+  "Major": "Biochemistry",
+  "University": "Georgia Tech"
+},{
+  "_id": {
+    "$oid": "6315928a0e2d78bcc4da1312"
+  },
+  "Firstname": "Elsie ",
+  "Lastname": "Amador",
+  "email": "aelsie@miu.edu",
+  "Password": "$2b$10$avlpAEUHGTRUUDClX8w4pusXUrTxK.kw2LhEbx8Du40KsJMd46ZEy",
+  "Role": "Student",
+  "Mentors": [],
+  "Mentees": [],
+  "Discipline": [],
+  "Active": true,
+  "__v": 0,
+  "Address": "600 N 15TH ST SELLECK 4204, LINCOLN, NE 68508-1296",
+  "Age": 21,
+  "Bio": "as I get close to graduating, I realize now more than ever that I need a mentor to help me grow in my career",
+  "Gender": "Female",
+  "Image": "FemaleUser.png",
+  "Major": "Computer Science",
+  "University": "UNO",
+  "YearInSchool": "Junior"
+},{
+  "_id": {
+    "$oid": "631593650e2d78bcc4da131e"
+  },
+  "Firstname": "Billy",
+  "Lastname": "Southard",
+  "email": "sbilly",
+  "Password": "$2b$10$n1JgAceFR/mW6s4Dyc0wNum8sIMq.tBMEOq5hLc9BVEjBOYUxVQyW",
+  "Role": "Student",
+  "Mentors": [],
+  "Mentees": [],
+  "Discipline": [],
+  "Active": true,
+  "__v": 0,
+  "Address": "3716 Frew Rd B, Charlotte, NC 28206",
+  "Age": 20,
+  "Bio": "",
+  "Gender": "Female",
+  "Image": "FemaleUser.png",
+  "Major": "Chemistry",
+  "University": "UNL",
+  "YearInSchool": "Sophomore"
+},{
+  "_id": {
+    "$oid": "631593bf0e2d78bcc4da1323"
+  },
+  "Firstname": "Paul",
+  "Lastname": "Walker",
+  "email": "wpaul@miu.edu",
+  "Password": "$2b$10$mvuazKjDstZNyqV5L6Ye0elAjqzq50j9BP/5f4RIGaSUhc6QPK.Te",
+  "Role": "Mentor",
+  "Mentors": [],
+  "Mentees": [],
+  "Discipline": [
+    "Agric"
+  ],
+  "Active": true,
+  "__v": 0,
+  "Address": "1000 N 4th ST MAILBOX 191 , Fairfield, IA 52557",
+  "Age": 33,
+  "Bio": "I love sharing my career journey and the knowledge I have acquired along the way.",
+  "Company": "Monsanto",
+  "Gender": "Male",
+  "Image": "user1.png",
+  "Job": "Irrigation Engineer",
+  "LevelOfEducation": "Masters",
+  "Major": "Agricultural Mechanization",
+  "University": "Iowa State University"
+}]
