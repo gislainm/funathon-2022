@@ -11,3 +11,11 @@
 6. in your terminal run **app.js** or run **npm start** to start the application. Make sure that you run one of these commands in your terminal when you are in the server(folder) directory.
 7. you should see **welcome to Pre-Pair** message printed in you terminal. if you see it, it means that the application has startedd successfully otherwise carefully repeat step (1-6).
 8. In your browser go to **http://localhost:8080/prepair**. This is where you will start interacting with the application.
+9. if you have used given json files to save user data to start from you can login as:
+    - a mentor:
+        - email: **sjerome@miu.edu**
+        - password: **123456**
+    - a student: 
+        - email: **aelsie@miu.edu**
+        - password: **123456**
+10. if you skipped step 3, you can skip the login page and signup as either a mentor or a student.
